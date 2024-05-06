@@ -35,7 +35,7 @@ function get_id() {
 id=$(get_id)
 
 # Define the server URL (replace with your actual URL)
-server_url="http://172.1.14.168:8081/api/inventory"
+server_url="http://172.16.112.1:3000/api/inventory"
 
 # Send a POST request with the IP and ID
 response=$(curl -s -X POST -H "Content-Type: application/json" -d "{\"address\": \"$ip_address\", \"id\": \"$id\"}" "$server_url")
